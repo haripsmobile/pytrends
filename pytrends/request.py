@@ -90,11 +90,11 @@ class TrendReq(object):
                     ).cookies.items()))
                 except requests.exceptions.ProxyError:
                     print('Proxy error. Changing IP')
-                    if len(self.proxies) > 1:
-                        self.proxies.remove(self.proxies[self.proxy_index])
-                    else:
-                        print('No more proxies available. Bye!')
-                        raise
+#                    if len(self.proxies) > 1:
+#                        self.proxies.remove(self.proxies[self.proxy_index])
+#                    else:
+#                        print('No more proxies available. Bye!')
+#                        raise
                     continue
 
     def GetNewProxy(self):
